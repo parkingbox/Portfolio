@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woo's Portfolio</title>
+    <meta name="author" content="Woo">
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
     <script src="https://kit.fontawesome.com/9f2f8fae96.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="imgs/style.css">
 </head>
-
 <body>
     <!-- Navbar -->
     <nav id="navbar">
         <div class="navbar__logo">
-            <img class="navbar__logo__image" src="imgs/favicon.png" alt="logo" width="20px" />
-            <a href="#">Woo</a>
+            <img class="navbar__logo__image" src="imgs/favicon.png" alt="logo" width="30px" />
+            <a href="#home">Woo</a>
+        </div>
+        </div>
             <ul class="navbar__menu">
-                <li class="navbar__menu__item">Home</li>
+                <li class="navbar__menu__item active">Home</li>
                 <li class="navbar__menu__item">About</li>
                 <li class="navbar__menu__item">Skills</li>
                 <li class="navbar__menu__item">My work</li>
@@ -29,126 +33,151 @@
     </nav>
     <!-- Home -->
     <section id="home">
-        <img src="imgs/profile.jpg" alt="Woo's profile photo" class="home__avator" />
-        <h1 class="home__title">Hello, <br />I'm Woo</h1>
+        <img
+            src="imgs/profile.jpg"
+            alt="Woo's profile photo"
+            class="home__avatar" />
+        <h1 class="home__title">Hello, <br/>I'm Woo</h1>
         <h2 class="home__description">A Frontend Developer</h2>
-        <button class="home_contact">Contact Me</button>
+        <button class="home__contact">Contact Me</button>
     </section>
     <!-- About -->
-    <section id="about"></section>
+    <section id="about" class="section section__container">
     <h1>About me</h1>
     <p>A graduate of aeronautical maintenance who has been get discharged to noncommissioned officer of the Air Force,
         and Junior developer who can learn newness with patience and passion and apply it to
     </p>
     <div class="about__majors">
         <div class="major">
-            <div class="major_icon">
+            <div class="major__icon">
                 <i class="fa-brands fa-html5"></i>
             </div>
-            <div class="major_title">Front-end</div>
-            <div class="major_description">
-                HTML, CSS, javaScript
-            </div>
-
+            <h2 class="major__title">Front-end</h2>
+            <div class="major__description">
+                HTML, CSS, JavaScript
+            </div> 
         </div>
-    </div>
-    <div class="about__majors">
         <div class="major">
-            <div class="major_icon">
+            <div class="major__icon">
                 <i class="fa-brands fa-react"></i>
             </div>
-            <div class="major_title">Framework</div>
-            <div class="major_description">
+            <h2 class="major__title">Framework</h2>
+            <div class="major__description">
+                
             </div>
-
         </div>
-    </div>
-    <div class="about__majors">
         <div class="major">
-            <div class="major_icon">
+            <div class="major__icon">
                 <i class="fa-solid fa-server"></i>
             </div>
-            <div class="major_title">Back-end</div>
-            <div class="major_description">
+            <h2 class="major__title">Back-end</h2>
+            <div class="major__description">
             </div>
-
         </div>
-    </div>
+        </div>
     <div class="about__jobs">
         <div class="job">
-            <img src="imgs/jobs/airforce.png" alt="airforce" class="job__logo" />
+            <img
+            src="imgs/airforce.png"
+            alt="airforce"
+            class="job__logo"
+            width="60px" 
+            />
+            <div class="job__description">
             <p class="job__name">
                 airforce comunications Noncommissioned officer
             </p>
             <p class="job_period">
-                2016 Sept ~ 2021 Sept
+                2016 Sept - 2021 Sept
             </p>
+            </div>
         </div>
-        <div class="job"></div>
     </div>
+</section>
     <!-- Skills -->
-    <section id="skills"></section>
-    <h1>Skills</h1>
-    <h2>Skills & Attributes</h2>
-    <p>
-        write
-    </p>
-    <div class="skillset">
-        <div class="skillset__left">
-            <h3 class="skillset__title">Skills</h3>
-            <div class="skill">
-                <div class="skill__description">
-                    <span>HTML</span>
-                    <span>30%</span>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
+    <section id="skills" class="section">
+        <div class="section__container" margin : 0px>
+            <h1>Skills</h1>
+            <h2>Skills & Attributes</h2>
+            <p>
+            </p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset_title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>HTML</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>CSS</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JavaScript</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 30%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>TypeScript</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>React</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 0%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Java</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skillset_right">
+                    <div class="tools">
+                        <h3 class="skillset_title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Visual Studio Code</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset_title">Etc</h3>
+                        <ul class="etc__list">
+                            <li><span>Git</span></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="skillset">
-        <div class="skillset__left">
-            <h3 class="skillset__title"></h3>
-            <div class="skill">
-                <div class="skill__description">
-                    <span>CSS</span>
-                    <span>30%</span>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="skillset">
-        <div class="skillset__left">
-            <h3 class="skillset__title"></h3>
-            <div class="skill">
-                <div class="skill__description">
-                    <span>JavaScript</span>
-                    <span>20%</span>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="skillset__right"></div>
-    <div class="tools">
-        <h3 class="skillset__title">Tools</h3>
-        <li><span>Visual Studio Code</span></li>
-
-    </div>
-    <div class="etc">
-        <h3 class="skillset_title">Etc</h3>
-        <li><span>Git</span></li>
-
-    </div>
-    </div>
-    <!-- Work -->
-    <section id="work"></section>
+    </section>
+    <!-- Work  프로젝트 만들고 다시 --> 
+    <section id="work" class="section">
     <h1>My work</h1>
     <h3>Projects</h3>
     <div class="work_categories">
@@ -167,20 +196,34 @@
             </div>
         </a>
     </div>
+</section>
     <!-- finally -->
-    <section id="finally"></section>
+    <section id="finallys" class="section">
+    <div class="section__containor">
     <h1>Finally</h1>
     <h3>My story</h3>
+    <div class="finallys">
         <div class="finally">
-            <img src="imgs" alt="People" class="finally__avatar" />
+            <img src="imgs/person face.png" alt="People" class="finally__avatar" />
             <div class="finally__speech-Bubble">
-                <p>write</p>
-                <div class="finally__speech-Bubble">
-                    <p>write</p>
-                    <div class="finally_speech-Bubble">
-                        <p>write</p>
-                    </div>
-                </div>
+                    <p>writewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewrite</p>
+            </div>
+        </div>    
+        <div class="finally">
+            <div class="finally__speech-Bubble">
+                    <p>writewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewrite</p>
+            </div>
+            <img src="imgs/person face.png" alt="People" class="finally__avatar" />
+        </div>   
+        <div class="finally">
+            <img src="imgs/person face.png" alt="People" class="finally__avatar" />      
+            <div class="finally__speech-Bubble">
+                    <p>writewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewrite</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
                 <!-- Contact -->
                 <section id="contact" class="section">
                     <h1 class="contact__title">Let's talk</h1>
