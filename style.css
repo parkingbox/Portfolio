@@ -81,7 +81,7 @@ h1{
 
 }   
 h2{
-    font-size : var(--font-regular);
+    font-size : var(--font-medium);
     font-weight : var(--weight-regular);
     color : var(--color-black);
     margin: 8px 0; 
@@ -333,6 +333,7 @@ padding: 8px 48px;
 .finally{
     display: flex;
     margin: 32px 0px;
+    justify-content: space-around;
 }
 
 .finally__avatar {
@@ -359,3 +360,30 @@ padding: 8px 48px;
 .finally__speech-Bubble p {
     color: var(--color-light-grey);
 }
+
+/* Contact */
+#contact{
+    background-color: var(--color-cornflowerblue);
+}
+
+.contact__title,
+.contact__email,
+.contact_rights {
+    color: var(--color-white)
+}
+
+.contact__title{
+    margin: 32px 0;
+}
+
+.contact__links{
+    font-size: var(--font-large);
+    margin: 24px 0;
+    transition: all var(--animation-duration) ease-in;
+}
+
+.contact__links i:hover {
+    transform: scale(1.1);
+    color: var(--color-yellow);
+}
+
