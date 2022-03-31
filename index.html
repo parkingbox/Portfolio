@@ -15,7 +15,7 @@
     <nav id="navbar">
         <div class="navbar__logo">
             <img class="navbar__logo__image" src="imgs/favicon.png" alt="logo" width="30px" />
-            <a href="#home">Woo</a>
+            <a href="#home" class="navbar__name">Woo</a>
         </div>
         </div>
             <ul class="navbar__menu">
@@ -23,14 +23,18 @@
                 <li class="navbar__menu__item">About</li>
                 <li class="navbar__menu__item">Skills</li>
                 <li class="navbar__menu__item">My work</li>
-                <li class="navbar__menu__item">Testimonials</li>
+                <li class="navbar__menu__item">Finally</li>
                 <li class="navbar__menu__item">Contact</li>
             </ul>
-
         </div>
-
         </div>
-    </nav>
+        
+        <!-- Toggle button -->
+        <button class="navbar__toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav> 
+
     <!-- Home -->
     <section id="home">
         <img
@@ -41,11 +45,11 @@
         <h2 class="home__description">A Frontend Developer</h2>
         <button class="home__contact">Contact Me</button>
     </section>
+
     <!-- About -->
     <section id="about" class="section section__container">
     <h1>About me</h1>
-    <p>A graduate of aeronautical maintenance who has been get discharged to noncommissioned officer of the Air Force,
-        and Junior developer who can learn newness with patience and passion and apply it to
+    <p>A graduate of aeronautical maintenance who has been get discharged to noncommissioned officer of the Air Force,<br>and Junior developer who can learn newness with patience and passion and apply it to
     </p>
     <div class="about__majors">
         <div class="major">
@@ -178,15 +182,17 @@
     </section>
     <!-- Work  프로젝트 만들고 다시 --> 
     <section id="work" class="section">
+    <div class="section__containor">
+
     <h1>My work</h1>
     <h3>Projects</h3>
-    <div class="work_categories">
-        <button class="category__btn">ParkSeungWoo</button>
-        <button class="category__btn">JavaScript</button>
-        <button class="category__btn">write</button>
-        <button class="category__btn">write</button>
-    </div>
-    <div class="work__projects">
+        <div class="work_categories">
+            <button class="category__btn">ParkSeungWoo</button>
+            <button class="category__btn">JavaScript</button>
+            <button class="category__btn">write</button>
+            <button class="category__btn">write</button>
+        </div>
+        <div class="work__projects">
         <!--프로젝트 링크연결 -->
         <a href="" clas="project" target="blank">
             <img class="project__img" src="링크주소" alt="설명">
@@ -195,6 +201,7 @@
                 <span>Write</span>
             </div>
         </a>
+        </div>
     </div>
 </section>
     <!-- finally -->
@@ -221,7 +228,7 @@
                     <p>writewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewritewrite</p>
             </div>
         </div>
-    </div>
+        </div>
     </div>
     </section>
                 <!-- Contact -->
