@@ -43,6 +43,7 @@
  --animation-duration: 300ms;
 /* Universal tags */
 }
+
 * {
     box-sizing: border-box;
 }
@@ -101,6 +102,10 @@ p {
     margin: 4px 0;
 }
 
+div {
+    display: block;
+}
+
 /* Navbar */
 #navbar { 
     width: 100%;
@@ -117,11 +122,15 @@ p {
     }
 
  .navbar__logo {
-     font-size: medium;
+     font-size: var(--font-medium);
      font-weight: var(--weight-semi-bold);
      display: flex;
-     align-items: center;
 }
+
+.navbar__logo__image {
+    width: 40px;
+    height: 40px;
+  }
 
  .navbar__menu__item {
      padding : 8px 12px;
@@ -164,10 +173,18 @@ p {
      border-radius: var(--size-border-radius)4px;
  }
 
+ .navbar__toggle-btn{
+     position: absolute;
+     top:26px;
+     right: 32px;
+     font-size: 24px;
+     color: var(--color-white);
+     display: none;
+ }
  /* Section common */
  .section{
      position: relative;
-     padding: 50px;
+     padding: 90px;
      text-align: center;
      margin: auto;
  }
@@ -179,8 +196,8 @@ p {
  /* About */
  .about__majors{
      display: flex;
-     justify-content: space-between;
-     margin: 80px 0;
+     justify-content: space-evenly ;
+     margin: 80px;
  }
  .about__jobs{
      justify-content: center;
@@ -188,6 +205,7 @@ p {
  }
 
  .major__icon{
+    position: relative;
     width: 170px;
     height: 170px;
     line-height:170px;
@@ -196,8 +214,9 @@ p {
     margin: auto;
     border: 1px solid var(--color-blue);
     border-radius: 50%;
-    margin-bottom: 16px;
+    margin: 16px;
     color :var(--color-blue);
+
  }
  .major__icon i {
      transition: all var(--animation-duration);
@@ -333,7 +352,7 @@ padding: 8px 48px;
 .finally{
     display: flex;
     margin: 32px 0px;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .finally__avatar {
@@ -359,6 +378,7 @@ padding: 8px 48px;
 
 .finally__speech-Bubble p {
     color: var(--color-light-grey);
+    white-space: break-word; 
 }
 
 /* Contact */
@@ -387,3 +407,44 @@ padding: 8px 48px;
     color: var(--color-yellow);
 }
 
+/* For below 768px screen width */
+@media screen and (max-width: 768px) {
+    .navbar__toggle-btn{
+    display: block;
+    }
+#navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    }
+.navbar__menu{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    display: none;
+    }
+
+.about__majors{
+    flex-direction: column;
+}
+
+.major {
+    margin-bottom: 38px;
+}
+
+.skillset{
+    flex-direction: column;
+}
+
+.project{
+    flex-grow: 1;
+}
+
+.finally__speech-Bubble{
+order: 1;
+}
+
+.finally{
+    flex-direction: column;
+    align-items: center;
+}
+}
