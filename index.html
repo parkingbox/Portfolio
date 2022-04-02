@@ -13,22 +13,19 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav id="navbar" >
+    <nav id="navbar" class="navbar--dark">
         <div class="navbar__logo">
             <img class="navbar__logo__image" src="imgs/favicon.png" alt="logo" width="30px" />
             <a href="#home" class="navbar__name">Woo</a>
         </div>
-        </div>
             <ul class="navbar__menu">
-                <li class="navbar__menu__item active">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skills</li>
-                <li class="navbar__menu__item">My work</li>
-                <li class="navbar__menu__item">Finally</li>
-                <li class="navbar__menu__item">Contact</li>
+                <li class="navbar__menu__item active" data-link="#home">Home</li>
+                <li class="navbar__menu__item" data-link="#about">About</li>
+                <li class="navbar__menu__item" data-link="#skills">Skills</li>
+                <li class="navbar__menu__item" data-link="#work">My work</li>
+                <li class="navbar__menu__item" data-link="#finallys">Finallys</li>
+                <li class="navbar__menu__item" data-link="#contact">Contact</li>
             </ul>
-        </div>
-        </div>
 
         <!-- Toggle button -->
         <button class="navbar__toggle-btn">
@@ -82,12 +79,7 @@
         </div>
     <div class="about__jobs">
         <div class="job">
-            <img
-            src="imgs/airforce.png"
-            alt="airforce"
-            class="job__logo"
-            width="60px" 
-            />
+            <img class="navbar__logo__image" src="imgs/airforce.png" alt="logo" width="30px" />
             <div class="job__description">
             <p class="job__name">
                 airforce comunications Noncommissioned officer
@@ -101,7 +93,7 @@
 </section>
     <!-- Skills -->
     <section id="skills" class="section">
-        <div class="section__container" margin : 0px>
+        <div class="section__container">
             <h1>Skills</h1>
             <h2>Skills & Attributes</h2>
             <p>
@@ -195,8 +187,8 @@
         </div>
         <div class="work__projects">
         <!--프로젝트 링크연결 -->
-        <a href="" clas="project" target="blank">
-            <img class="project__img" src="링크주소" alt="설명">
+        <a href="" class="project" target="blank">
+            <img class="project__img" src="" alt="">
             <div class="project__description">
                 <h3>Write</h3>
                 <span>Write</span>
@@ -212,7 +204,7 @@
     <h3>My story</h3>
     <div class="finallys">
         <div class="finally">
-            <img src="imgs/person face.png" alt="People" class="finally__avatar" />
+            <img src="imgs/personface.png" alt="People" class="finally__avatar" />
             <div class="finally__speech-Bubble">
                     <p>블라블라블라</p>
             </div>
@@ -221,10 +213,10 @@
             <div class="finally__speech-Bubble">
                     <p>블라블라블라</p>
             </div>
-            <img src="imgs/person face.png" alt="People" class="finally__avatar" />
+            <img src="imgs/personface.png" alt="People" class="finally__avatar" />
         </div>   
         <div class="finally">
-            <img src="imgs/person face.png" alt="People" class="finally__avatar" />      
+            <img src="imgs/personface.png" alt="People" class="finally__avatar" />      
             <div class="finally__speech-Bubble">
                     <p>블라블라블라</p>
             </div>
