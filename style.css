@@ -115,7 +115,8 @@ p {
     align-items: center;
     color: var(--color-white);
     padding: 16px;
-    transition: var(--animation-duration) ease-in-out;
+    transition: all var(--animation-duration) ease-in-out;
+    z-index: 1;
 }
 
 #navbar.navbar--dark{
@@ -431,6 +432,11 @@ p {
     #navbar {
         flex-direction: column;
         align-items: flex-start;
+        background-color: var(--color-cornflowerblue);
+    }
+
+    #navbar.navbar--dark {
+        padding: 16px;
     }
 
     .navbar__menu {
@@ -438,6 +444,11 @@ p {
         text-align: center;
         width: 100%;
         display: none;
+        transition: all var(--animation-duration) ease;
+    }
+
+    .navbar__menu.open {
+        display: block;
     }
 
     .about__majors {
