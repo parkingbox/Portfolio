@@ -35,6 +35,7 @@
 
     <!-- Home -->
     <section id="home">
+        <div class="home__container">
         <img
             src="imgs/profile.jpg"
             alt="Woo's profile photo"
@@ -42,6 +43,7 @@
         <h1 class="home__title">Hello, <br/>I'm Woo</h1>
         <h2 class="home__description">A Frontend Developer</h2>
         <button class="home__contact">Contact Me</button>
+    </div>
     </section>
 
     <!-- About -->
@@ -180,15 +182,52 @@
     <h1>My work</h1>
     <h3>Projects</h3>
         <div class="work_categories">
-            <button class="category__btn">ParkSeungWoo</button>
-            <button class="category__btn">JavaScript</button>
-            <button class="category__btn">write</button>
-            <button class="category__btn">write</button>
+            <button class="category__btn">All<span class = " category__count">3</span></button>
+            <button class="category__btn">Front-end<span class = " category__count">3</span></button>
+            <button class="category__btn">Back-end<span class = " category__count">3</span</button>
+            <button class="category__btn">Mobile<span class = " category__count">2</span></button> 
         </div>
-        <div class="work__projects">
+    <div class="work__projects">
         <!--프로젝트 링크연결 -->
         <a href="" class="project" target="blank">
-            <img class="project__img" src="" alt="">
+            <img 
+            class="project__img" 
+            src="" 
+            alt=""
+            />
+            <div class="project__description">
+                <h3>Write</h3>
+                <span>Write</span>
+            </div>
+        </a>
+        <a href="" class="project" target="blank">
+            <img 
+            class="project__img" 
+            src="" 
+            alt=""
+            />
+            <div class="project__description">
+                <h3>Write</h3>
+                <span>Write</span>
+            </div>
+        </a>
+        <a href="" class="project" target="blank">
+            <img 
+            class="project__img" 
+            src="" 
+            alt=""
+            />
+            <div class="project__description">
+                <h3>Write</h3>
+                <span>Write</span>
+            </div>
+        </a>
+        <a href="" class="project" target="blank">
+            <img 
+            class="project__img" 
+            src="" 
+            alt=""
+            />
             <div class="project__description">
                 <h3>Write</h3>
                 <span>Write</span>
@@ -235,5 +274,11 @@
                     </div>
                     <p class="contact_rights">2022 Park SeungWoo - All rights reserved</p>
                 </section>
-            </body>
+
+<!-- Arrow up -->
+<button class="arrowup">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+</body>
 </html>
