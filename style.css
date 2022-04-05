@@ -194,6 +194,10 @@ p {
     display: none;
 }
 
+.home__contact:hover {
+    background-color: c var(--color-orange);
+}
+
 /* Section common */
 .section {
     position: relative;
@@ -211,7 +215,8 @@ p {
 .about__majors {
     display: flex;
     justify-content: space-evenly;
-    margin: 80px;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 
 .about__jobs {
@@ -239,7 +244,7 @@ p {
 }
 
 .major__icon:hover i {
-    color: var(--color-pink);
+    color: var(--color-cornflowerblue);
     transform: rotate(-30deg) scale(1.1)
 }
 
@@ -335,8 +340,8 @@ p {
 /* Work */
 .work__projects {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    margin: 1rem;
 }
 
 .project {
@@ -345,7 +350,6 @@ p {
     justify-content: center;
     width: 290px;
     height: 700px;
-    margin: 2px;
     background-color: var(black);
     border-radius: 4px;
     opacity: 1;
@@ -482,6 +486,14 @@ p {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+    :root {    /* Font size */
+        --font-large: 30px;
+        --font-medium: 18px;
+        --font-regular: 16px;
+        --font-small: 14px;
+        --font-micro: 12px;
+    }
+
     .navbar__toggle-btn {
         display: block;
     }
@@ -508,12 +520,37 @@ p {
         display: block;
     }
 
+    .section {
+        padding: 16px;
+    }
+
     .about__majors {
         flex-direction: column;
     }
 
+
+    .major__icon {
+        width: 130px;
+        height: 130px;
+        line-height: 123px;
+        font-size: 60px;
+    }
+
+    .major__icon {
+    position: relative;
+    width: 170px;
+    height: 170px;
+    line-height: 170px;
+    font-size: 70px;
+    margin: auto;
+    color: var(--color-blue);
+    border: 1px solid var(--color-blue);
+    border-radius: 50%;
+    margin-bottom: 16px;
+    transition: all 700ms ease;
+    }
     .major {
-        margin-bottom: 38px;
+        margin-bottom: 30px;
     }
 
     .skillset {
@@ -538,4 +575,5 @@ p {
         flex-direction: column;
         align-items: center;
     }
+
 }
