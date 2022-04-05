@@ -14,6 +14,7 @@
     --color-light-blue: #5eb8ff;
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
+    
     --color-black: #000000;
     --color-green: #00695c;
     --color-dark-green: #002232;
@@ -144,16 +145,14 @@ p {
     padding: 8px 12px;
     margin: 0 4px;
     cursor: pointer;
+    color: var(--color-white);
     border-radius: var(--size-border-radius);
-}
-
-.navbar__menu__item.active {
-    border: 1px solid var(--color-white);
+    border: 1px solid transparent;
 }
 
 .navbar__menu__item:hover {
     background-color: var(--color-deepblue);
-    border-radius: 4px;
+    border-color: var(--color-white);
 }
 
 /* Home */
@@ -334,26 +333,6 @@ p {
 }
 
 /* Work */
-
-.work_categories {
-    margin: 40px;
-}
-
-.category__btn {
-    border: 1px solid var(--color-dark-white);
-    border-radius: var(--size-border-radius) 4px;
-
-    font-size: var(--font-regular);
-    padding: 8px 48px;
-
-}
-
-.category__btn.active,
-.category__btn:hover {
-    background-color: var(--color-pink);
-    color: var(--color-white);
-}
-
 .work__projects {
     display: flex;
     flex-wrap: wrap;
@@ -363,54 +342,58 @@ p {
 .project {
     position: relative;
     display: flex;
-    justify-self: center;
-    align-items: center;
-    width: 280px;
-    height: 250px;
+    justify-content: center;
+    width: 290px;
+    height: 700px;
     margin: 2px;
-    background-color: var(--color-light-white);
-
+    background-color: var(black);
+    border-radius: 4px;
+    opacity: 1;
 }
 
 .project__img {
     max-width: 100%;
     max-height: 100%;
+    opacity: 0.9;
+    border-radius: 7px;
 }
 
-.project__description{
-    position: absolte;
+.project__description {
+    position: absolute;
+    background-color: black;
     display: flex;
     flex-direction: column;
-    justify-self: center;
-    top: 0;
-    left: 0;
+    justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: var(--color-black);
+    top: 0;
+    left: 0;
     opacity: 0;
-    transform: translateY(0px);
+    transform: translateY(10px);
     transition: all var(--animation-duration) ease-in;
+    border-radius: 7px;
 }
 
 .project:hover .project__description{
     opacity: 0.8;
+    transform: translateY(0px);
 }
 
 .project__description h3 {
     color: var(--color-white);
 }
 
-.project__description h3 :after {
+.project__description h3::after{
     content: '';
     display: block;
     position: relative;
     left: 50%;
     width: 25px;
     height: 2px;
-    margin-left: 12px;
+    margin-left: -12px;
     margin-top: 8px;
-    background-color: var(--color-dark-white);
-} 
+    background-color:  var(--color-white);
+}
 
 /* finally */
 #finallys {
@@ -485,7 +468,7 @@ p {
     width : 70px;
     height : 70px;
     font-size: 50px;
-    background-color: var(--color-cornflowerblue);
+    background-color: var(--color-orange);
     border-radius: 50%;
     opacity: 0;
     pointer-events: none;
