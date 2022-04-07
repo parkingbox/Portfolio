@@ -157,7 +157,7 @@ p {
 
 /* Home */
 #home {
-    background: url(home-background.png) center/cover no-repeat;
+    background: url(imgs/home-background.png) center/cover no-repeat;
     padding: 40px;
     padding-top: 120px;
     text-align: center;
@@ -216,7 +216,7 @@ p {
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
-    margin-bottom: 0px;
+    margin-bottom: 30px;
 }
 
 .about__jobs {
