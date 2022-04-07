@@ -8,7 +8,7 @@
     <meta name="author" content="Woo">
     <link rel="icon" type="image/png" href="imgs/favicon.png">
     <script src="https://kit.fontawesome.com/9f2f8fae96.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="imgs/style.css">
     <script src="main.js" defer></script>
 </head>
 <body>
@@ -175,24 +175,28 @@
             </div>
         </div>
     </section>
-    <!-- Work  프로젝트 만들고 다시 --> 
+    <!-- Work  프로젝트 만들고 다시 -->
     <section id="work" class="section">
     <div class="section__container">
-
     <h1>My work</h1>
     <h3>Projects</h3>
-        <div class="work_categories">
-            <button class="category__btn">All<span class = " category__count">3</span></button>
-            <button class="category__btn">Front-end<span class = " category__count">3</span></button>
-            <button class="category__btn">Back-end<span class = " category__count">3</span</button>
-            <button class="category__btn">Mobile<span class = " category__count">2</span></button> 
-        </div>
     <div class="work__projects">
         <!--프로젝트 링크연결 -->
+        <a href class="project" target="blank">
+            <img 
+            class="project__img"
+            src="imgs/ex1.jpg"
+            alt="Portfolio"
+            />
+            <div class="project__description">
+                <h3>Portfolio</h3>
+                <span>Dreamcoding with HTML, CSS, JavaScript</span>
+            </div>
+        </a>
         <a href="" class="project" target="blank">
             <img 
-            class="project__img" 
-            src="" 
+            class="project__img"
+            src="imgs/ex2.jpg"
             alt=""
             />
             <div class="project__description">
@@ -202,8 +206,8 @@
         </a>
         <a href="" class="project" target="blank">
             <img 
-            class="project__img" 
-            src="" 
+            class="project__img"
+            src="imgs/ex3.jpg"
             alt=""
             />
             <div class="project__description">
@@ -212,20 +216,9 @@
             </div>
         </a>
         <a href="" class="project" target="blank">
-            <img 
-            class="project__img" 
-            src="" 
-            alt=""
-            />
-            <div class="project__description">
-                <h3>Write</h3>
-                <span>Write</span>
-            </div>
-        </a>
-        <a href="" class="project" target="blank">
-            <img 
-            class="project__img" 
-            src="" 
+            <img
+            class="project__img"
+            src="imgs/ex4.jpg"
             alt=""
             />
             <div class="project__description">
@@ -247,7 +240,7 @@
             <div class="finally__speech-Bubble">
                     <p>블라블라블라</p>
             </div>
-        </div>    
+        </div>
         <div class="finally">
             <div class="finally__speech-Bubble">
                     <p>블라블라블라</p>
@@ -255,7 +248,7 @@
             <img src="imgs/personface.png" alt="People" class="finally__avatar" />
         </div>   
         <div class="finally">
-            <img src="imgs/personface.png" alt="People" class="finally__avatar" />      
+            <img src="imgs/personface.png" alt="People" class="finally__avatar" />     
             <div class="finally__speech-Bubble">
                     <p>블라블라블라</p>
             </div>
@@ -276,9 +269,10 @@
                 </section>
 
 <!-- Arrow up -->
-<button class="arrowup">
-    <i class="fa-solid fa-arrow-up"></i>
+<button class="arrow-up">
+    <span style="color :white;">
+        <i class="fa-solid fa-arrow-up"></i>
+    </span>
 </button>
-
 </body>
 </html>
