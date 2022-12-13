@@ -505,42 +505,42 @@ p {
   font-weight: 300;
 }
 
-/* finally */
-#finallys {
+/* lastly */
+#lastlys {
   background-color: var(--color-light-white);
 }
 
-.finallys {
+.lastlys {
   margin: 40px;
 }
 
-.finally {
+.lastly {
   display: flex;
   margin: 32px 0px;
   justify-content: center;
 }
 
-.finally__avatar {
+.lastly__avatar {
   width: 150px;
   height: 150px;
   border-radius: 50%;
 }
 
-.finally__avatar:nth-child(odd) {
+.lastly__avatar:nth-child(odd) {
   margin-right: 40px;
 }
 
-.finally__avatar:nth-child(even) {
+.lastly__avatar:nth-child(even) {
   margin-left: 40px;
 }
 
-.finally__speech-Bubble {
+.lastly__speech-Bubble {
   padding: 18px;
   background-color: var(--color-white);
   border-radius: var(--size-border-radius);
 }
 
-.finally__speech-Bubble p {
+.lastly__speech-Bubble p {
   color: var(--color-light-grey);
 }
 

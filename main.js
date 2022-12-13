@@ -117,7 +117,13 @@ class TextScramble {
   }
 }
 // Example
-const phrases = ["A Frontend Developer"];
+const phrases = [
+  "Creative And Passion",
+  "A Frontend Developer",
+  "Slowly But Steadily",
+  "Who want to code it neatly",
+  "That's a person I want to be",
+];
 
 const el = document.querySelector(".home__description");
 const fx = new TextScramble(el);
