@@ -1,3 +1,8 @@
 # Portfolio Website
+<div align="center">
 
-[https://parkingbox.github.io/Portfolio/]
+HTML, CSS, JS를 활용한 Portfolio사이트
+
+https://parkingbox.github.io/Portfolio/
+<div>
+
