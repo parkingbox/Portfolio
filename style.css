@@ -507,7 +507,7 @@ p {
 }
 
 /* lastly */
-#lastlys {
+#lastly {
   background-color: var(--color-light-white);
 }
 
@@ -666,19 +666,5 @@ p {
 
   .project {
     flex-grow: 1;
-  }
-
-  .finally__speech-Bubble {
-    order: 1;
-  }
-
-  .finally__avatar {
-    width: 80px;
-    height: 80px;
-  }
-
-  .finally {
-    flex-direction: column;
-    align-items: center;
   }
 }
