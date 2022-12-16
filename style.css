@@ -136,6 +136,7 @@ p {
 .navbar__logo__image {
   width: 40px;
   height: 40px;
+  margin-right: 5px;
 }
 
 .navbar__menu__item {
